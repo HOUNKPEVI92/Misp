@@ -1,0 +1,1251 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{calligra}
+\usepackage{amsmath}
+%\usepackage{palatino}%qualité de l'écriture 
+%\usepackage{frcursive}
+\usepackage{systeme}
+%\usepackage{pstricks}
+%\usepackage{caption}
+%\usepackage{calligra}
+%\usepackage{amsfonts}
+%\usepackage{bookman}
+%\usepackage{helvet}
+%\usepackage[normalem]{ulem}
+\usepackage{minitoc}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage[framemethod=default]{mdframed}
+\usepackage{framed}
+\usepackage{color}
+\usepackage{fancybox}
+%\usepackage{bbding}
+\usepackage{minitoc}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{multicol,multirow}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=2.25cm]{geometry}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%\cfoot{}
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{pgf,tikz}
+\usepackage{palatino}
+\usepackage{pdfpages}
+\usepackage{bookman}
+\usepackage{graphicx}
+\usepackage{minitoc}
+\usepackage{mathrsfs}
+\usepackage{longtable}
+\usepackage{calligra}
+\usepackage{ulem}
+%\usepackage{helvet}
+%\usepackage{bbding}
+\usepackage{caption}
+%\usepackage{chancery}
+\usepackage{multicol}
+\linespread{1.2}
+%\usepackage[left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm]{geometry}
+%\usepackage{fancyhdr}
+\usepackage{lastpage}
+%\usepackage{pstricks}
+\usepackage{fancybox}
+%\usepackage{draftwatermark}
+\pagestyle{fancy}
+\fancyhead{}
+
+
+%%%%%%%%%%%%%%%%%%
+\usepackage{pgf,tikz}
+%\usepackage{pst-tree}
+\setlength{\columnseprule}{0.5pt}
+%\usepackage{draftwatermark}
+
+
+\usepackage{tikz}
+\usepackage{shapepar}
+\usepackage{shapepar}
+\usepackage{fancybox}
+
+\usepackage{subfig}
+\usepackage{pifont}
+\usepackage{textcomp}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagestyle{fancyplain}
+\fancyfoot[L,RO]{\tiny\textbf{}}
+\fancyfoot[L,RO]{\footnotesize\sf{HOUNKPEVI.Iréné N.} }
+\fancyfoot[LO]{\footnotesize{\sf Rapport BAPES}}
+%\renewcommand{\footrulewidth}{0.5pt}
+\usepackage{lipsum}
+%##########################################""
+%\newtheorem{Tab}[thm]{Rappel}
+
+%\renewcommand{\thesection}{\Roman{section}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	
+	
+	\thispagestyle{empty}
+	\pagenumbering{roman}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\titleformat{\chapter}[display]{\bfseries \Large}{\rule{5.6cm}{3mm} \hfill  \quad \MakeUppercase \chaptertitlename~\thechapter \quad \hfill \rule{5.6cm}{3mm}}{0.1cm}{\titlerule \bfseries \sl \LARGE \vspace{0.25cm} \centering}[\vspace{0.25cm} \titlerule]
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	\definecolor{shaded}{0.9}
+%	\begin{shaded}
+%	\end{shaded}
+%	\cfoot{}
+	
+	
+\frenchspacing
+\linespread{1.5}
+\fbox{
+	\hspace*{-0.5cm}\begin{minipage}{4cm}
+		\includegraphics[scale=0.30]{un.jpg}
+\end{minipage}} \hspace*{0.2cm}
+\begin{minipage}{9cm}
+	\begin{center}
+		{\large {\fontfamily{pzc}\selectfont République du Bénin}}
+		
+		
+		% {\scriptsize \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen}
+		
+		\vspace*{0.4cm}
+		{\large {\fontfamily{pzc}\selectfont Ministère de l'Enseignement Supérieure et de la Recherche Scientifique}}
+		
+		%{\scriptsize \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen}
+		
+		\vspace*{0.4cm}
+		{\large {\fontfamily{pzc}\selectfont Université Nationale des Sciences, Technologies, Ingénierie et
+				Mathématiques (UNSTIM)}}
+		
+		%{\scriptsize \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen}
+		
+		\vspace*{0.4cm}
+		{\large {\fontfamily{pzc}\selectfont École Normale Supérieure de Natitingou}}
+		
+		%{\scriptsize \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen \FourStarOpen}
+	\end{center}
+\end{minipage} \hspace*{-0.15cm}
+\fbox{
+	\begin{minipage}{4.3cm} 
+		\includegraphics[scale=0.5]{ens}
+\end{minipage}}
+
+\hspace*{1cm}\begin{center}
+	\rule{18cm}{0.25mm}
+	
+	\vspace*{-0.5cm}
+	\rule{18cm}{2mm}
+	
+	\vspace*{-0.5cm}
+	\rule{18cm}{0.5mm}
+\end{center}
+
+%\hfill \No attribué par la bibliothèque : 
+
+\hfill /\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/\_/
+
+\vspace{0.7cm}
+\begin{center}
+	
+		\begin{center}
+				\shadowbox{\textsc{\Large{Rapport de fin de formation pour l'obtention du BAPES}}}
+			\end{center}
+	%Rapport de fin de stage pour l'obtention de la Licence Professionnelle
+	\vspace*{0.5cm}
+	\textbf{Formation des enseignants ACDPE des promotions 2012, 2014 et 2016\\ et autres retardataires}
+	
+
+	
+	\vspace{0.5cm}
+	\textbf{Domaine} : Science de l'éducation et de la formation
+	
+	\vspace{0.5cm}
+	\textbf{Mention} : Science exacte
+	
+	\vspace{0.5cm}
+	\textbf{Spécialité} : Mathématiques-Informatique
+\end{center}
+%\begin{definition*}
+
+\vspace{0.7cm}
+\begin{center}
+	
+	%\begin{minipage}{20cm}\begin{normalsize}
+	\begin{center}
+		\shadowbox{THEME:}
+	\end{center}
+	
+	\vspace{0.3cm}
+	\begin{center}
+		\setlength{\fboxsep}{3mm}
+		\setlength{\fboxrule}{0.7mm}
+		\fbox{\begin{minipage}{16cm}\begin{normalsize}\fontfamily{ppl}\selectfont\textsl{\textbf{\begin{center}
+								Difficultés des apprenants des classes de  troisième au \textbf{CEG} \textbf{V}akon à construire la somme de deux vecteurs: Cas de la classe de 3$^{\text{ème}}$M6.
+					\end{center}}}
+				\end{normalsize}
+		\end{minipage}}
+	\end{center}
+\end{center}
+
+\vspace*{0.25cm}
+%\begin{calligra}
+%\begin{center}
+%{\LARGE Rédigé par:}
+%\end{center}
+%\end{calligra}
+
+\vspace*{0.1cm}
+\begin{center}
+	\textbf{ HOUNKPEVI Iréné Noudéhouénou}
+\end{center}
+
+%\vspace*{0.1cm}
+%\begin{center}
+%Le...../...../ 2024
+%\end{center}
+
+%\vspace*{0.35cm}
+%\begin{calligra}
+%\begin{center}
+%\LARGE Sous la direction du:
+%\end{center}
+%\end{calligra}
+%\end{definition*}
+\vfill
+\begin{center}
+	\begin{tabular}{cp{5cm}c}
+		
+		\textit{\underline{Co-Directeur:}}&& \textit{\underline{Directeur:}} \\
+		&&\\
+		\textbf{DEDJROSSE Wilfrid},&\hfill &Dr \textbf{COMBETE Cyril},\\
+		
+		Conseiller Pédagogique &\hfill &Enseignant-chercheur en mathématiques\\
+		
+		en Mathématiques&&  à l'IMSP (UAC).\\
+	\end{tabular}
+\end{center}
+\vfill
+\begin{center}
+	\textbf{Année académique 2023-2024}
+\end{center}
+\chapter*{Résumé}
+Dans une formation professionnelle, il est important de mettre en pratique les cours théoriques reçus, ce qui favorise une prise en main réelle des notions apprises. C'est dans cet intérêt que nous avons été envoyés en stage professionnel après quelques cours reçus. Ce stage s'est déroulé au CEG Vakon, collège situé dans le département de l'Ouémé, précisément dans la commune d' Akpro-Missérété. Il s'agit pour nous de remédier aux difficultés des apprenants des classes de troisième au CEG Vakon à construire la somme de deux vecteurs. La classe expérimentale est la 3\up{ème}M6 avec un effectif de 43 apprenants.\par 
+Ainsi donc, nous avons administré un pré-test à toute la classe afin d'évaluer le niveau de difficultés des apprenants. Nous avons ensuite divisé la classe en deux groupes; un groupe ayant suivi une remédiation spéciale sur la construction de la somme de deux vecteurs et l'autre n'ayant pas suivi cette remédiation. En suite nous avons réuni toute la classe pour leur administrer un nouveau test (appelé post-test) afin d'évaluer l'impact de la remédiation apportée.\par  
+Les résultats obtenus nous  ont prouvé que la remédiation que nous avons  apporté aux difficultés des apprenants  a eu un impact positif. Cependant pour s'assurer de l'efficacité de la méthode utilisée, nous avons effectué un test d'hypothèses sur les moyennes des deux groupes après remédiation en  utilisant le logiciel R. Les résultats des tests confirment l'efficacité de la méthode et elle peut être utilisée par tout autre enseignant.
+\chapter*{Remerciements}
+\large
+En préambule à ce rapport nous remercions Dieu qui nous a gardé dans son amour et nous a protégé depuis notre entrée en fonction publique, surtout durant toute la période de notre stage de professionnalisation.\\
+Nous remercions notre Directeur de mémoire, \textbf{Dr Cyrille COMBETE} pour le suivi dont nous avons bénéficié de sa part. \\
+
+Nous remercions également notre co-directeur qui est notre maître de stage, le \textbf{CP Wilfrid DEDJROSSE} pour son accompagnement durant tout le long de cette expérience professionnelle avec beaucoup de patience et de pédagogie. \\
+
+Nous voudrions aussi remercier  le Directeur de notre lieu de stage, là où nous sommes au poste, \textbf{M. Luc ADONONHOUE }et toute l'administration du CEG Vakon pour le soutien moral et les conseils prodigués à notre égard.\\
+
+Nous souhaitons remercier également le\textbf{ Dr DJEGBE Innocent} et toute l'administration de l'ENS Natitingou pour cette formation de qualité dont nous avons bénéficié.  
+\chapter*{Dédicace}
+\Large{	Je dédie ce document
+	\begin{itemize}
+		\item [$\bullet$] A mes chers parents \textit{HOUNKPEVI Brice et  LOKONON} Juliette
+		\item [$\bullet$] A ma chère épouse \textit{Mme HOUNKPEVI Mispéreth née VIWADINOU}
+\end{itemize}}
+
+
+%\begin{center}
+%	{\setlength{\shadowsize}{6pt}{\color{black} \scalebox{3}[1.5]{\begin{large}
+				%					\shadowbox{Remerciements}
+				%	\end{large}}}}
+%\end{center}
+\renewcommand{\contentsname}{Plan}
+\tableofcontents
+\chapter*{Liste des tableaux}
+\Large{\begin{itemize}
+		\item [$\bullet$]\textbf{Tableau N°1} : Personnel administratif de l'ENS Natitingou.
+		\item [$\bullet$] \textbf{Tableau N°2} : Personnel enseignant par catégorie.
+		\item [$\bullet$] \textbf{Tableau N°3} : Résultat des examens de fin d'année de 2018 à 2023 au CEG Vakon.
+		\item [$\bullet$] \textbf{Tableau N°4} : Grille et clé de correction du pré-test.
+		\item [$\bullet$] \textbf{Tableau N°5} : Grille et clé de correction du post-test.
+		\item [$\bullet$] \textbf{Tableau N°6} : Compte-rendu du pré-test pour le groupe $G_1$.
+		\item [$\bullet$] \textbf{Tableau N°7 }:  Compte-rendu du pré-test pour le groupe $G_2$.
+		\item [$\bullet$]\textbf{ Tableau N°8} :  Compte-rendu du pré-test pour le groupe classe.
+		\item [$\bullet$] \textbf{Tableau N°9} :  Compte-rendu du post-test pour le groupe $G_1$.
+		\item [$\bullet$] \textbf{Tableau N°10 }:  Compte-rendu du post-test pour le groupe $G_2$.
+\end{itemize}}
+\chapter*{Liste des figures }
+
+\begin{itemize}
+	\item [$\bullet$] \textbf{Figure1}: Motif représentant le déplacement des ouvriers.
+	\item [$\bullet$] \textbf{Figure2}: Diagramme représentant les résultats du pré-test.
+	\item [$\bullet$]  \textbf{Figure3}: Diagramme représentant les résultats du post-test du groupe $G_1$.
+	\item [$\bullet$]  \textbf{Figure4}: Diagramme représentant les résultats du post-test du groupe $G_2$.
+	\item [$\bullet$]  \textbf{Figure5}: Diagramme comparatif représentant les résultats du post-test des groupes $G_1$ et $G_2$.
+\end{itemize}
+\chapter*{Liste des sigles }
+\large{
+\begin{itemize}
+	\item [$\bullet$]		ACDPE : Agent Contractuel de Droit Public de l'Etat.
+		\item [$\bullet$] ACE : Agent Contractuel de l"Etat
+	\item [$\bullet$]		FE : Fonctionnaire de l'Etat.
+		\item [$\bullet$] APE : Agent Permanent de l"Etat
+	\item [$\bullet$]		AME : Aspirant au Métier d'Enseignant
+	\item [$\bullet$]		APC : Approche Par Compétences.
+	\item [$\bullet$]		BAPES : Brevet d'Aptitude au Professorat de l'Enseignement du Secondaire.
+	\item [$\bullet$]		CAPES : Certificat d'Aptitude au Professorat de l'Enseignement Secondaire.
+	\item [$\bullet$]		CEG : Collège d'Enseignement Général.
+	\item [$\bullet$]		ENI : Ecole Normale Intégrée.
+	\item [$\bullet$]		ENS : Ecole Normale Supérieure.
+	\item [$\bullet$]	EPS : Education Physique et Sportive.
+	\item [$\bullet$]	FAST : Faculté des Sciences et Techniques.
+	\item [$\bullet$]		CIAM : Collection Inter Africaine de Mathématiques.
+	\item [$\bullet$]		MI : Mathématiques-Informatiques.
+	\item [$\bullet$]		SA : Situation d'Apprentissage.
+	\item [$\bullet$]	PCT : Physique Chimie et Technologies
+	\item [$\bullet$]	SVT : Sciences de la Vie et de la Terre.
+%	\item [$\bullet$]		APH : Animation Pédagogique Hebdomadaire.
+	\item [$\bullet$]		DIPIQ : Direction de l'Inspection Pédagogique, de l'Innovation et de la Qualité
+	\item [$\bullet$]	AE : Animateur d'Etablissement.	
+\end{itemize}
+}		
+
+\chapter*{Introduction générale}\addcontentsline{toc}{chapter}{Introduction générale}
+\pagenumbering{arabic}
+L'éducation est le socle du développement d'une nation car elle permet à l'enfant de développer ses potentiels et de participer pleinement et de façon responsable à la vie d'une société libre. Le secteur de l'enseignement étant le plus déterminant dans le système éducatif, ceci nécessite alors que les acteurs qui interviennent dans ce système soient formés pour la réussite des apprenants dont ils ont la charge. C'est dans cet objectif que l'Etat a invité les enseignants Agents contractuels du droit public de l'Etat (ACDPE) des promotions 2012, 2014 et 2016 et tous autres enseignants retardataires du MESTFP,  titulaires des diplômes académiques  pour la formation professionnelle.\\
+Nous faisons partie de  la promotion 2016 et nous avons fait notre stage au CEG Vakon, collège dans lequel nous sommes en service depuis 2019. La classe de 3èM6 qui nous a été confiée pour l'enseignement des mathématiques était notre classe de mise en application de notre formation professionnelle.\\
+Les difficultés rencontrées par les apprenants en mathématiques sont énormes, surtout dans la manipulation des vecteurs qui sont des outils essentiels en mathématiques. Depuis la classe de 4è, les apprenants commencent déjà à explorer les concepts fondamentaux des vecteurs tels que leurs caractéristiques. Ces difficultés s'accentuent en classe de 3ème  lorsqu'il s'agit pour eux de construire la somme de deux vecteurs. Le choix de notre thème de rapport nous permettra donc de comprendre et remédier à ces difficultés.\\
+Ce rapport est constitué se deux parties.
+Dans ce rapport, nous allons consacrer la première partie  à la présentation de notre lieu de formation et de  stage et dans la deuxième partie, le développement de notre thème.
+%\addtocounter{qq}{1}\par\theq.\space}
+\chapter*{\textbf{Partie1: PRESENTATION DE L'ECOLE DE FORMATION ET DE L'ECOLE DE STAGE}}\addcontentsline{toc}{part}{Partie 1: PRESENTATION DE L'ECOLE DE FORMATION ET DE L'ECOLE DE STAGE}
+%\renewcommand{\section}
+%\renewcommand{\labelenumi}{\section}
+%\chapter*{Partie 1: PRESENTATION DU LIEU DE FORMATION ET DE STAGE}
+%\setcounter{qq}{0}
+\section{Présentation de l'école de formation}
+\subsection{Localisation, bref historique}
+L'ENS de Natitingou est située au Nord du Bénin, à l'entrée de la ville de Natitingou, au quartier
+Ourbouga, dans le département de l'Atacora. Alors qu'elle fonctionnait comme Ecole Normale
+Intégrée (ENI) avant sa création, elle recrutait de 2005 à 2006 des maitrisards qu'elle formait pour
+le CAPES. Mais en 2006, elle ferma ses portes. Elle les rouvrit par la suite le 04 Novembre 2009
+et recrute depuis lors des étudiants ayant un niveau BAC séries C, D ou équivalent. Elle reçoit environ quatre-vingt-
+dix étudiants boursiers recrutés par le MESRS par voie concours et mis en formation initiale dans
+ladite école. Au bout de 3 ans de formation professionnelle et académique, les élèves professeurs
+sortent avec une licence professionnelle. Depuis 2022, il y a à l'ENS, le lancement de formations
+continues pour l'obtention du CAPES en SVT, MI ou PCT.
+\subsection{Infrastructures, mobiliers et matériels didactiques}
+Actuellement, l'ENS dispose de :
+\begin{itemize}
+	\item [$\bullet$]	onze salles de cours actives; 
+\item [$\bullet$]	un amphithéâtre;
+ \item [$\bullet$] une bibliothèque certes pas très fournies
+	en documents scientifiques, mais riche en documents de littérature, de pédagogie, de
+	psychologie et en magazines de revues;
+	\item [$\bullet$]	une salle aménagée pour les professeurs, de deux blocs de laboratoires relativement
+	équipés;
+	\item [$\bullet$]une salle informatique,
+	\item [$\bullet$]un restaurant,
+	\item [$\bullet$]une infirmerie,
+	\item [$\bullet$]quelques bus pour les sorties pédagogiques,
+	\item [$\bullet$]un podium,
+	\item [$\bullet$]Un espace vert,
+	\item [$\bullet$]Quelques logements pour les élèves professeurs internés,
+	\item [$\bullet$]Une aire de sport (terrain de foot, handball, basketball  \dots)
+\end{itemize}
+\subsection{Organisation administrative de l'ENS de Natitingou}
+
+\begin{longtable}{|p{10cm}|p{8cm}|}
+		\caption{\label{} Administration de l'ENS Natitingou}\\
+	\hline
+	Membres de l'administration&Noms et prénoms\\
+	\hline
+	Directeur&Dr. (MC) DJEGBE Innocent\\
+	\hline
+	Directeur Adjoint&Dr (MC) TOPANOU Nikita\\
+	\hline
+	Secrétaire Général d'Entité&M. SOULE Faissol\\
+	\hline
+	Comptable &M. KITOYI Nassif\\
+	\hline
+	Chef service scolarité et examens &Dr. (MC) MIWADINOU Clément H.\\
+	\hline
+	Chef service coordinateur, formation continue &Pr. KPADONOU Arsène\\
+	\hline
+	Chef service adjoint en charge de la formation& Dr. (MC) DRAMANE Gado\\
+	\hline
+	coordination continue
+	Chef service gestion des laboratoires &Dr. (MC) TOMETIN Arsène S. Lyde\\
+	\hline
+	Secrétaire exécutif de formation &Dr. (MA) HOUEHA Saturnin\\
+	\hline
+	Chef département de mathématique et informatique (MI)& Dr. (MC) DEGLA Serge\\
+	\hline
+	Chef département physique-chimie et technologie (PCT)& Dr. (MC) FAGBOHOUN Louis \\
+	\hline
+	Chef département de sciences de la vie et de terre (SVT)& Dr. (MC) VODOUNON Cyrille Junior A.\\
+	\hline
+	
+	Chef service matériel&
+	M. HOUNKPE Raoul\\
+	\hline
+	Chef division Scolarité et examen&
+	Mme SOUBA Sidonie\\
+	\hline
+	Chef division bibliothèque&
+	M. OKOKO Maurille\\
+	\hline
+\end{longtable}
+\begin{center}
+	\textit{Source}:Sécrétariat Administration ENS Natitingou
+\end{center}
+\section{Organisation de l'école de stage}
+\subsection{Localisation, création et évolution}
+
+
+Créé en 2006 par la décision Année 2006 N° 003/MEPS/CAB/DC/SGM /DPP du 18/01/2007,
+avec comme premier Directeur, Monsieur TELLA B. Etienne, le C.E.G VAKON ambitionne de se
+donner la taille d'un grand établissement secondaire de par ses infrastructures, l'organisation du
+travail en son sein et ses divers résultats scolaires. Le CEG Vakon est situé dans la Commune
+d'Akpro-Missérété, Arrondissement de Vakon, Village Anago sur une superficie sécurisée de
+04ha03a75ca (lot156, lotissement de Vakon-Azohouè) affectée au MEPS par arrêté communal
+Année 2006 N°1E/002/SG-SADE/SA du 27/01/2006.
+\subsection{Infrastructures, mobiliers et matériels didactiques}
+Le CEG Vakon dispose de neuf (09) bâtiments comportant chacun trois
+(03) salles de cours soit au total vingt-sept (27) et quatorze (14) classes volantes. Il dispose d'une direction, d'un secrétariat, d'un censorat, d'une salle des professeurs, d'une comptabilité
+et deux (02) bureaux pour les surveillants. Il est doté aussi d'un laboratoire non équipé qui sert
+de salle de cours et d'une cantine. Ce CEG a en son sein un terrain de football. Par ailleurs, un poteau pour pratiquer le grimper et un sautoir pour le saut en hauteur y sont présents. C'est sur ce terrain que se déroulent les activités d'éducation physique, sportive et culturelle.\\
+Plusieurs jeux
+d'instruments de géométrie sont disponibles et fréquemment, bics bleus, bics rouges et
+craies (blanches et couleurs) sont octroyés aux professeurs par le censorat pour leur permettre le bon
+déroulement des activités pédagogiques.
+\subsection{Présentation administrative de l'école }
+\begin{enumerate}
+	\item \textbf{ LA DIRECTION}:
+	Le CEG VAKON est dirigé depuis le 27 septembre 2016 par Monsieur ADONONHOUE Luc,
+	professeur certifié des SVT de grade A1-11 nommé par arrêté N°367/MESTFP/DC/SGM/ DAF/ 
+	SPRF/ SA/0015SGG16 du 22/09/2016 en remplacement de Monsieur AGBOWAÏ Constant, admis
+	à faire valoir ses droits à la retraite.
+	\item \textbf{ LE CENSORAT}:
+	Le censorat est géré par Madame COLES Ziyadat, professeur certifié d'Anglais de grade A1-8 nommée par arrêté N° 029/MESTFP/DC/ SGM/DPAF/SGRHTE/ DPRFDS-A /CJ/SA/ 026SGG23 du
+	07/07/2023 en remplacement de Madame AHOLOU J. E. Fortunée. Elle est assistée par Monsieur
+	FAGNIHOUN H. Camille, professeur adjoint d'Histoire et Géographie de grade A3-7 nommé par
+	arrêté N° 083/MESTFP/DC/SGM/DAF/SPRF/SA/075SGG17 du 12/09/2017.
+	\item  \textbf{ LA SURVEILLANCE}:
+
+		La surveillance générale est gérée par Monsieur DJOSSOU E. Emmanuel, professeur
+	adjoint d'Anglais de grade A3-7 nommé par arrêté N° 037/ MESTFP / DC/ SGM/DAF/SRHDS / DPRF/ CJ/SA/ 045SGG21 du 10/09/2021. Il est aidé dans ses tâches par cinq (5) adjoints à savoir :
+	\begin{itemize}
+	\item  Monsieur KPODOZOUNTO Léonce G.G., professeur adjoint d'Histoire et Géographie de grade A3-
+	7 nommé par arrêté N°036/ MESFTPRIJ/DC/SGM/DRH/SPRF/SA du 19/01/2015.
+		\item Monsieur DANYOSSI G. Jacques, professeur adjoint d'Histoire et Géographie de grade A3-7
+	nommé par arrêté N° 083/MESTFP/ DC/ SGM/DAF/SPRF/SA/075SGG17 du 12/09/2017.
+	\item Monsieur De SOUZA Max Virgilio, professeur adjoint d'Histoire et Géographie de grade A3-6
+	nommé par note de service N° 5273/DDESTFP-OUEME/MESTFP/SAF/S du 07/12/2021.
+	\item Monsieur KIKI Toudonou Marcelin, professeur adjoint d'Anglais de grade A3-7 nommé par arrêté
+	N° 0106/MESTFP/DC/SGM/DPAF/ SRHDS/DPRF-A/CJ/SA/046SGG22 du 05/07/2022.
+	\item Monsieur AHOUANSE Arnaud, professeur adjoint d'Histoire et Géographie de grade A3-7 nommé
+	par arrêté N° 029/MESTFP/DC/ SGM/DPAF/SGRHTE/DPRFDS-A/CJ/SA/026SGG23 du 07/07/2023.
+\end{itemize}
+	\item  \textbf{ LA COMPTABILITE}:
+	Ce service est géré par Monsieur BRIGA G. K. Denis, professeur adjoint de Mathématiques
+	de grade A3-7, nommé gestionnaire comptable par arrêté N°107/MESTFP/ DC/ SGM/DPAF/
+	SRHDS/DPRF-A/CJ/SA/047SGG22 du 05/07/2022,
+	% en remplacement de monsieur AZANDEGBE	Brice.
+	\item  \textbf{ L'INFIRMERIE}:
+	Ce service, comme dans la plupart de nos collèges n'existe pas au C.E.G VAKON malgré le
+	nombre sans cesse croissant des élèves. Les mouvements de nos élèves vers le centre de santé
+	de l'Arrondissement constituent un problème dont la gestion demeure difficile. 
+	\item  \textbf{ LE SECRETARIAT}:
+	Le secrétariat du collège est animé par madame BAMAHOSSOVI Valérie. 
+	\item  \textbf{ LE LABORATOIRE}:
+	Le laboratoire ne répond pas effectivement à une salle d'expérimentation. Il est
+	régulièrement utilisé comme une simple salle de cours. 
+	\item  \textbf{LE GARDIENNAGE}:
+	Le C.E.G VAKON bénéficie des services de deux gardiens, Monsieur ZOUNDJIEKPON Samuel
+	et OUTOU René qui sont des agents sous contrat local donc payés sur fonds propres et tous
+	déclarés à la CNSS.
+	\item  \textbf{ LA BIBLIOTHEQUE}:
+	Il n'existe pas dans l'établissement une bibliothèque digne du nom.
+	
+\end{enumerate}\subsection{Organisation pédagogique de l'école}
+\begin{itemize}
+	\item [$\bullet$] 
+	Le personnel enseignant au titre de l'année scolaire 2022-2023 est constitué d'un total de soixante-treize (73) professeurs toutes catégories
+	confondues résumé par le tableau suivant :
+	
+	\begin{longtable}{|c|c|c|c|}
+			\caption{\label{} Personnel enseignant CEG Vakon}\\
+		\hline
+		FE ou APE & ACDPE ou ACE& AME&TOTAL\\
+		\hline
+		04&18&51&73\\
+		\hline
+	\end{longtable}
+	\begin{center}
+		\textit{Source:} Censorat CEG Vakon\end{center}
+	\item [$\bullet$] 
+	Les programmes d'études en vigueur ont été exécutés selon
+	l'approche par les compétences malgré les effectifs pléthoriques dans la plupart des classes. Les
+	animations pédagogiques hebdomadaires ont été régulièrement tenues au sein du collège de
+	même que les visites de classes internes, ajoutées aux tournées périodiques des conseillers
+	pédagogiques et des inspecteurs ; ce qui, à coup sûr a contribué à la bonne qualité de
+	l'enseignement dans les classes.
+	\item [$\bullet$] Les compétences des élèves ont été évaluées à travers les évaluations ponctuelles
+	d'étape (interrogations écrites) et des productions scolaires (devoirs surveillés).
+	\item [$\bullet$] Les résultats de fin d'année scolaire, au plan interne, sont globalement
+	satisfaisants.
+\end{itemize}
+	
+	\begin{longtable}{|c|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+		\caption{\label{} Résultat des examens de BEPC et BAC 2019 à 2023}\\
+		\hline
+		Examens &BEPC&BAC A1&  BAC A2&BAC B&BAC D\\
+		\hline
+		2018-2019&50,23&100&64,28&38,46&36,36\\
+		\hline
+		2019-2020&32,82&100&46,80&57,14&53,16\\
+		\hline
+		2020-2021&44,27&100&79,59&73,33&66,66\\
+		\hline
+		2021-2022&65,79&100&77,41&92,30&49,18\\
+		\hline
+		2022-2023&68,93&100&80&81,81&51,28\\
+		\hline	
+	\end{longtable}
+	\begin{center}
+		\textit{Source}: Censorat CEG Vakon\end{center}
+
+
+\section{Programmes de formation, d'enseignement ou de stage :}
+\subsection{Phase théorique}
+La phase théorique de notre formation a été consacrée uniquement au cours professionnels que nous avons reçus. Elle s'étend sur deux ans et prend en compte les congés
+et les vacances. ( Congés de Noël 2022 (1er regroupement), congés de pâques 2023 (2ème regroupement), vacances 2023 (3ème regroupement), congés de détente 2024 (4ème regroupement), congés de pâques 2024 (5ème regroupement), vacances 2024).
+Nous n'avons pas suivi de cours académiques puisque nous étions recrutés avec un diplôme académique (licence). C'est sur la base de cette licence académique que nous
+avons été envoyés en formation.\\
+Voici ci-dessous les différents cours reçus lors de la formation.
+\begin{itemize}
+	\item  1er regroupement : Pratiques professionnelles et réflexives.
+	\item  2ème regroupement : Didactique de la matière.
+	\item  3ème regroupement : Psychopédagogie, Législation. scolaire, Pédagogie générale, Initiation à la
+	recherche en éducation, Communication en milieu socio-professionnel, Sociologie de
+	l'éducation.
+	\item  4ème regroupement : TICE.
+	\item  5ème regroupement : Résolution de problèmes, Logique et raisonnement, Statistique et
+	modélisation des données.
+\end{itemize}
+\subsection{Phase pratique}
+Par rapport à la phase pratique de notre formation, nous avons été maintenus dans
+notre collège là où nous sommes au poste (CEG Vakon). Ainsi donc, notre collège fut
+notre lieu de stage.
+\subsection*{(a) Activités pédagogiques menées au cours de la formation}
+Dès la pré-rentrée scolaire, nous avons déjà notre emploi du temps de cours que nous
+avons mis à la disposition de notre tuteur. C'était les classes de 3èM6, 1èreAB et TleD
+au CEG Vakon.
+Nous avons eu très tôt des recommandations par rapport à la conduite de ces classes
+de la part de notre tuteur. La formation théorique que nous avons reçue nous a permis
+d'améliorer notre pratique d'enseignement.
+Nous avons déroulé normalement les séquences de cours dans nos classes respectives
+de la rentrée jusqu'en Mai où nous avons achevé les programmes dans ces différentes
+classes. Les cahiers de texte et de présence sont remplis après chaque cours. Les fiches de cours que nous avons conçues ont été régulièrement avisées par notre tuteur.
+Nous avons participé aux séances d'animations pédagogiques hebdomadaires (APH) qui se déroulent tous les mercredi de 10h-12h. Nous avons  aussi participé aux séances d'animations pédagogiques de zones (APZ) qui ont eu lieu quatre fois au cours de l'année à raison d'une APZ par trimestre.
+\subsection*{(b) Suivi évaluation}
+Nous avons bénéficié tout au long de notre stage d'un bon encadrement de la part
+de notre directeur et de notre co-directeur qui est notre tuteur. Tout d'abord, notre
+tuteur nous a donné des recommandations par rapport à la conduite de classes avant
+notre première rencontre avec les apprenants. Ensuite, nous avons constitué un groupe sous la recommandation de notre tuteur afin de travailler surtout par rapport à la confession
+de fiches pédagogiques. Régulièrement, il organise des visites de classes afin de suivre
+la manière dont nous mettons en application les différentes recommandations qui nous sont données.
+Nous avons aussi reçu au cours de notre stage la visite d'une délégation de l'ENS composée de \textsc{Mr MIWADINOU Clément} et de \textsf{Mr BOKO Rachidi }. Elle était venue prendre connaissance de la manière dont se déroulait notre stage et nous prodiguer des conseils surtout à propos de notre inspection qui s'est déroulée le lundi 22 Avril 2024 de 10h30 à 12h30.
+
+\subsection*{(c) Difficultés rencontrées et remédiations apportées aux difficultés}
+La première difficulté rencontrée était la remarque du niveau faible de la plupart des
+apprenants; ce qui nous amène à faire des rappels sur les pré-recquis nécessaires à la séquence à aborder.
+% Une autre difficulté concerne le manque de volonté de certains
+%apprenants à faire les photocopies des supports d'activités ce qui nous contraint à faire
+%certaines photocopies gratuitement aux apprenants, ou parfois à recopier les activités
+%au tableau.
+ Nous avons noté aussi des absences fantaisistes, des retards répétés, des
+cours non recopiés, des exercices non faits et des cours non appris de la part de certains apprenants. Pour remédier à ces difficultés, nous rappelons chaque fois le contrat
+didactique, appliquons les échelles de punitions parfois après des rappels à l'ordre.
+Nous corrigeons aussi régulièrement le cahier de cours et le cahier d'exercices de ces
+apprenants pour les inciter à se mettre à jour.
+\subsection*{(d) Enseignements tirés ou encore leçons apprises}
+Au cours de notre stage, nous avons appris plusieurs choses et nous avons corrigé plusieurs aptitudes d'enseignement que nous pratiquions entre temps. Nous avons amélioré notre conduite de classe, notre conduite de cours, nos pratiques d'enseignement.
+\subsection*{(e) Impressions générales et suggestions}
+Nos impressions sont en général bonnes par rapport au déroulement de notre stage
+de professionnalisation. Les apprenants que nous avons encadrés, malgré la déviance de
+certains, en majorité ont pris conscience et se sont améliorés de mieux en mieux.\\
+Notre
+directeur de mémoire était toujours disponible pour nous écouter, et surtout notre co-
+directeur nous rendait régulièrement visite pour s'assurer du travail que nous faisons et se rendait disponible à tout moment pour répondre à nos préoccupations. L'administration sous laquelle nous travaillons était aussi disponible pour nous accompagner pour nos éventuels besoins.
+
+\section{Conclusion partielle}
+La pratique d'une théorie est une chose fondamentale. Le stage de professionnalisation a été d'un grand atout pour nous. Cela nous a permis de mettre en pratique les cours théoriques que nous avons reçu .
+
+
+\chapter*{\textbf{Partie 2 : DEVELOPPEMENT DU THEME DE PRATIQUE REFLEXIVE}}\addcontentsline{toc}{part}{Partie 2: DEVELOPPEMENT DU THEME DE PRATIQUE REFLEXIVE}
+%\part*{ DEVELOPPEMENT DU THEME DE PRATIQUE REFLEXIVE}
+
+%\chapter*{Partie 2: Développement du thème de
+	%	pratique réflexive ou de
+	%	recherche-action de résolution	de problème en éducation}
+\section{Problématique}
+\subsection{Contexte et justification}
+La notion de vecteur est une notion fondamentale pour les apprenants. Cette notion partiellement abordée en classe de 4è, se poursuit en classe de 3è dans la séquence n°4( Somme de deux vecteurs , Produit d'un vecteur par un nombre réel)  de la situation d'apprentissage n°3 (calcul littéral). L'importance de cette notion vient du fait que les vecteurs sont utilisés autant en mathématiques qu'en sciences physiques. De plus, la notion de vecteur intervient dans toutes les classes scientifiques du second cycle.\\
+La première indication  pédagogique dans cette séquence est de faire construire la somme de deux vecteurs. 
+Le guide de la classe de troisième ne propose aucune méthode pour faciliter l'acquisition de cette connaissance aux apprenants. Cela revient donc à l'enseignant de trouver des stratégies et méthodes requises permettant de faire comprendre cette notion  aux apprenants ce qui leur donnera les habiletés nécessaires pour bien maîtriser la notion. Ceci justifie donc la pertinence et le choix de notre sujet.   
+
+\subsection{Objectif}
+L'objectif principal de ce thème est de remédier aux difficultés des apprenants de la classe de troisième à construire la somme deux vecteurs. La maîtrise de cette notion donnera la facilité à  l'apprenant de vite appréhender la suite des notions  sur les vecteurs.\\ 
+Les objectifs spécifiques de ce thème sont:
+\begin{itemize}
+	\item identifier les erreurs récurrentes commises par les apprenants lors de la construction de la somme de deux vecteurs. 	
+	\item  proposer des méthodes simples  aux apprenants pour construire la somme de deux vecteurs.
+	\item  concevoir  des activités permettant aux apprenants de construire la somme de  deux vecteurs afin de remédier aux difficultés qu'ils rencontrent. 
+\end{itemize} 
+
+\subsection{Questions de recherche}
+\begin{itemize}
+	\item  Quelles sont les difficultés précises que les apprenants de la classe de 3èM6 du CEG Vakon rencontrent lors de la construction de la somme de deux vecteurs?
+	\item  Quelles sont les méthodes qu'on peut proposer aux apprenants afin de leur permettre de construire correctement la somme de deux vecteurs?
+\end{itemize}
+
+\subsection{Hypothèses de recherche}
+\begin{itemize}
+	\item  La mauvaise utilisation des instruments géométriques sont à la base des difficultés qu'éprouvent les apprenants de la classe de 3èM6 du CEG Vakon  lors de la construction de la somme de deux vecteurs.
+	\item  la non maîtrise des définitions, propriétés et caractéristiques des vecteurs contribue aux difficultés qu'éprouvent les apprenants de la classe de 3èM6 du CEG Vakon à construire la somme de deux vecteurs.
+	\item  La proposition  de quelques méthodes simples permettra aux apprenants de construire correctement la somme de deux vecteurs. 
+\end{itemize}
+\section{Revue de littérature}
+%\underline{\textbf{Clarification conceptuelle}}:\\
+Nous allons expliquer dans cette rubrique,  les mots clés du thème, à savoir: Difficulté, construire, somme et vecteurs 
+\begin{itemize}
+	\item  \textbf{Difficulté}: D'après le dictionnaire, une difficulté, c'est ce qui rend une chose difficile ou ce qu'il y a de difficile en quelque chose, obstacle, empêchement.
+	\item  \textbf{Construire:} Construire, c'est tracé; c'est  prendre des actions concrètes pour assembler ou mettre en place différents éléments ou concepts afin de parvenir à une réalisation finale. 
+	\item \textbf{somme}: une somme en mathématique est le résultat d'une opération  qui consiste à additionner deux ou plusieurs nombres ou quantités de même nature.
+	\item  \textbf{Vecteur}: Objet mathématique caractérisé par une direction, un sens et une longueur
+\end{itemize}
+Sur la base de quelques recherches que nous avons effectuées dans la bibliothèque de l'ENS de Natitingou, nous avons remarqué que  plusieurs rapports justifient le fait que les apprenants négligent les définitions et les propriétés en mathématique.
+\begin{itemize}
+	\item  M. GNIMASSOU Guérick dans son rapport de fin de formation  dont le thème est intitulé: \textsf{"utilisation des définitions et propriétés du cours pour l'amélioration du raisonnement mathématiques des élèves de la classe de 4è du Lycée de jeunes filles de Natitingou sur la séquence: Notion de plan et droites de l'espace "} pour l'obtention de la licence professionnelle en 2013  a fait ressortir les difficultés des apprenants liées aux raisonnements mathématiques et propose qu'il faut insérer dans les activités des questions de cours (les définitions et propriétés), ce qui va obliger les apprenants d'apprendre les définitions et propriétés mathématiques.
+	\item M. Ulrich AKPLOGAN dans son rapport de fin de formation en licence professionnelle soutenu en 2013 dont le thème est: \textsf{"Apport de l'insertion dans les évaluations des questions de cours pour motiver les apprenants à apprendre le cours de Mathématique"}, a  souligné que pour motiver les apprenants à apprendre le cours de mathématique, l'insertion des questions de cours dans les différentes évaluations est fondamentale.
+	\item De la même manière, M. ATEDE Isaac s'est intéressé aux vecteurs et a fait remarquer dans son thème de rapport de fin de stage soutenu en 2022 dont le thème de recherche est intitulé \textsf{"Utilisation adéquate en mathématique des définitions et propriétés relatives à l'orthogonalité et à la colinéarité de deux vecteurs dans la résolution des problèmes au niveau des apprenants de la 3èM1 du CEG Goho/Abomey: Analyses et approches de solutions "} que les difficultés des apprenants à justifier la colinéarité et l'orthogonalité de deux vecteurs sont liées à la non maîtrise ou la confusion dans les définitions et les propriétés relatives aux vecteurs ou aux autres objets de base en mathématiques.
+\end{itemize}
+\section{Méthodes de collecte des données et plan d'action}
+\subsection*{Méthodes de collecte des données}
+Le problème auquel nous sommes appelés à trouver solution est un problème concret et cela nécessite une solution réelle. De plus nous sommes en contact direct avec la population sur laquelle nous menons notre recherche. Tout ceci nous amène à opter pour une recherche action. Les données que nous avons recueillies sont des données quantitatives. Ce qui justifie pour nous l'utilisation de la méthode recherche action quantitative. 
+\subsection*{Plan d'action}
+Notre étude se déroule uniquement dans le cadre du CEG Vakon. 	Il comporte 44 groupes pédagogiques dont 7 classes de troisième encadrés par 7 enseignants de mathématiques..\\
+Notre population est constituée de l'ensemble des apprenants des classes de troisième inscrit au titre de l'année 2023-2024.\\
+L'échantillon de la population choisie pour l'étude est la classe de 3\up{ème}M6 dans laquelle nous intervenons, comportant  un effectif de $43$.\\
+L'identification du problème s'est produite suite à la présentation du premier cours déroulé sur les vecteurs. 
+
+Le constat est fait  lors du travail individuel où les apprenants avaient des difficultés à construire la somme de deux vecteurs. Le plan que nous avons suivi pour notre recherche action se présente comme suit:
+\begin{itemize}
+	\item[$\bullet$] En un premier lieu, nous avons évalué toute la classe pour s'assurer de l'impact de la solution que nous apportons au problème identifié. Cette évaluation est apppelée le pré-test qui nous donne un résultat que nous notons $O_1$.
+	\item[$\bullet$]  Ensuite nous avons divisé la classe en deux groupe $G_1$ et $G_2$. Le groupe $G_1$ a un effectif de $21$ et le groupe $G_2$ un effectif de $22$. Ce partage est fait en tenant compte du  rang des apprenants  selon leurs moyennes du premier semestre en mathématiques. Ceci pour ne pas regrouper dans un même groupe uniquement des élèves dont le niveau est faible en mathématiques.  Ainsi, ceux qui ont un rang pair sont rangés dans le groupe $G_1$ et ceux qui ont un rang impair sont rangés dans le groupe $G_2$. 
+	\item[$\bullet$] Le groupe $G_2$ est invité à une séance spéciale de remédiation  sur la construction de la somme de deux vecteurs.
+	\item[$\bullet$] Après cela, nous avons réuni toute la classe où nous avons effectué un test (post-test) afin d'évaluer l'impact de la méthode que nous avons utilisé pour apporter de solutions aux problèmes identifiés. 
+\end{itemize}
+Ainsi donc, l'échantillon que représente notre classe a subit le pré-test aboutissant à un résultat $O_1$. Ensuite, cet échantillon est soumis à un traitement $X$, et enfin le post test est administré pour donner un résultat $O_2$.\\
+\textbf{Illustration}:\\
+
+
+%\begin{center}
+%	\textbf{Groupe}\hspace*{0.5cm} $\longrightarrow$\hspace*{1cm} \textbf{Pré-test}\hspace*{1cm}$\longrightarrow$\hspace*{1cm} \textbf{Traitement}\hspace*{1cm}$\longrightarrow$ \hspace*{1cm} \textbf{Post-test}\\
+%	\textbf{Classe 3èM1}\hspace*{0.5cm} $\longrightarrow$\hspace*{0.5cm} \textbf{O1}\hspace*{0.5cm}$\longrightarrow$\hspace*{2cm} \textbf{X}\hspace*{5cm}$\longrightarrow$ \hspace*{0.5cm} \textbf{O2}
+%\end{center}
+
+
+\begin{tabular}{|ccccccc|}
+	\hline
+	\textbf{Groupe} &$\longrightarrow$& \textbf{Pré-test}\hspace*{0.5cm}&$\longrightarrow$&\hspace*{0.5cm} \textbf{Traitement}&\hspace*{0.5cm}$\longrightarrow$& \hspace*{0.5cm} \textbf{Post-test}\\
+	\textbf{Classe 3$^{\text{ème}}$M6} &$\longrightarrow$& \textbf{01}\hspace*{0.5cm}&$\longrightarrow$&\hspace*{0.5cm} \textbf{X}&\hspace*{0.5cm}$\longrightarrow$& \hspace*{0.5cm} \textbf{O2}\\
+	\hline
+\end{tabular}
+\section{Résultats et évaluation de l'action}
+Le pré-test que nous avons administré à toute la classe  se présente comme suit:
+
+
+\begin{center}
+	\underline{\textbf{Présentation du pré-test}}
+%	\begin{center}
+%		\fbox{\textbf{Evaluation ponctuelle d'étape n°1}}
+%	\end{center}
+	\begin{flushleft}
+		\underline{\textbf{Contexte}}
+	\end{flushleft}
+	Sovi est un élève en classe de troisième. Après la
+	première séance de cours reçu sur les vecteurs, le
+	professeur soumet toute la classe à une activité qui
+	consiste à construire certains points dans le plan en manipulant des vecteurs. Sovi dans la résolution de 
+	cette activité constate qu'il a des difficultés à 
+	construire la somme de deux vecteurs.\\
+	\textbf{Tâche:} Tu vas aider Sovi en répondant à la consigne
+	\begin{flushleft}
+		\underline{\textbf{Consigne}}
+	\end{flushleft}
+	$ABC$ est un triangle. $I$ milieu de $[BC]$
+	
+	\begin{enumerate}
+		\item  Construis les points $P , Q, R$ et $S$ tels que
+		\begin{enumerate}
+			\item $\overrightarrow{AB}=\overrightarrow{CP}$
+			\item  $\overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{AQ}$
+			\item  $\overrightarrow{AR}=-\overrightarrow{AC}$
+			\item  $\overrightarrow{BS}=-\overrightarrow{AB}+\overrightarrow{BC}$
+		\end{enumerate}
+		\item  Construis le vecteur $\overrightarrow{BI}+\overrightarrow{AC}$ que tu noteras $\vec{u}$
+	\end{enumerate}
+
+\end{center}
+\vspace{0.5cm}
+Voici ci-dessous la fiche pédagogique de remédiation que nous avons administrée aux apprenants du groupe $G_2$
+\begin{center}
+	\textbf{Fiche Pédagogique de remédiation}\\
+\end{center}
+\textbf{	I. ÉLÉMENTS D'IDENTIFICATION}
+
+\begin{itemize}
+	\item  Établissement: CEG Vakon
+	\item Année scolaire: 2023-2024
+	\item  Discipline: Mathématiques
+	\item  Date 22/02/24
+	\item  Classe: 3ème
+	\item  Effectif: 43;  \hspace*{2cm}
+	Nombre de groupes:  04
+	\item  Nom du professeur: HOUNKPEVI Iréné 
+	\item   	SA N° 3: Calcul littéral \hspace*{2cm}
+	Durée: 54 heures
+	\item  Séquence n°:4 Somme de deux vecteurs - Produit d'un vecteur par un nombre réel
+\end{itemize}	
+\textbf{	II. ÉLÉMENTS DE PLANIFICATION		
+}
+\begin{enumerate}
+	\item Contenu de formation
+	\begin{enumerate}
+		\item Compétences:
+		\begin{itemize}
+			\item[$\bullet$]  Compétences disciplinaires:
+			
+			\begin{itemize}
+				\item  Résoudre un problème ou une situation-problème en utilisant les concepts et procédure du
+				langage et du raisonnement mathématique relatifs aux vecteurs
+				\item  Appréhender les mathématiques dans leurs aspects géométriques par l'appropriation des Coordonnées de vecteurs
+				\item  Appréhender les mathématiques dans leurs aspects numériques par le traitement de données
+				relatives aux vecteurs
+			\end{itemize}
+			\item[$\bullet$]  Compétence transdisciplinaire:\\Agir individuellement et collectivement dans le respect mutuel et l'ouverture d'esprit
+			\item[$\bullet$]  Compétences transversales:
+			\begin{itemize}
+				\item  Exploiter l'information disponible
+				\item  Exercer sa pensée critique
+				\item  Communiquer de façon précise et appropriée
+			\end{itemize}
+			
+		\end{itemize}
+		\item 	Connaissances et techniques:
+		Sommes de deux vecteurs
+		\item  Stratégie objet d'apprentissage: Résolution de problèmes
+	\end{enumerate}	
+	\item Stratégies d'enseignement / apprentissage: Travail individuel, Travail en petits groupes,
+	Travail collectif
+	\item Durée: 1 h 50 min
+	\item  Matériel:\\
+	Pour l'enseignant : Programme d'études et guide de la classe de 3ème et tout autre manuel de
+	mathématiques autorisé, craies, chiffon, instruments de géométrie, fiche pédagogique du jour et
+	supports des activités.\\
+	Pour l'apprenant : instruments de géométrie, livre au programme, cahier de cours, cahier d'exercice, cahier de recherche, support des activités
+	
+\end{enumerate}			
+
+III. Déroulement:
+
+\subsection*{Activité1:Somme de deux vecteurs}  
+Au cours de l'épandage, les déplacements de l'un des ouvriers du technicien en charge du projet ont été enregistrés. Ces déplacements définissent la figure ci dessous.
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\clip(-2.78,0.04) rectangle (4.64,4.54);
+	\draw (-2,4)-- (-2,1);
+	\draw (-2,1)-- (1,1);
+	\draw (1,1)-- (2.5,1);
+	\draw (1.75,1.09) -- (1.75,0.91);
+	\draw (2.5,1)-- (4,1);
+	\draw (3.25,1.09) -- (3.25,0.91);
+	\draw (4,1)-- (2.5,4);
+	\draw (2.5,4)-- (1,1);
+	\draw (2.5,4)-- (2.5,1);
+	\draw (-2,4)-- (2.5,4);
+	\draw (-2.44,4.5) node[anchor=north west] {$$ A $$};
+	\draw (2.16,4.54) node[anchor=north west] {$$ B $$};
+	\draw (-2.42,1.12) node[anchor=north west] {$$ C $$};
+	\draw (2.08,1.08) node[anchor=north west] {$$ D $$};
+	\draw (0.68,1.06) node[anchor=north west] {$$ I $$};
+	\draw (3.84,1.26) node[anchor=north west] {$$ J $$};
+\end{tikzpicture}
+\textbf{Figure1}\\
+$ABDC$ est un rectangle et $IC=2DI$.
+
+\textbf{Consigne 1:} Caractéristiques d'un vecteur
+\begin{enumerate}
+	
+	\item 
+	\begin{enumerate}
+		\item Donne les caractéristiques d'un vecteur non nul du plan.\item Donne les caractéristiques du vecteur $\overrightarrow{AB}$ 
+		\item Identifie deux vecteurs ayant les mêmes caractéristiques. Comment appelle t-on ces vecteurs?
+	\end{enumerate}
+	
+	\item \begin{enumerate}
+		\item Détermine la résultante des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$.\item Que représente cette  résultante pour les vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$?  
+	\end{enumerate}
+	\item Détermine $\overrightarrow{AB}+\overrightarrow{BD}$ 
+\end{enumerate}
+\textbf{Stratégie }: TI=$\hspace{0.5cm}$   min TG= $\hspace{0.5cm}$ min  TC= $\hspace{0.5cm}$ min\\
+
+\begin{flushleft}
+	\underline{\textbf{Résultat attendu}}
+\end{flushleft}	
+
+\begin{enumerate}
+	\item Donnons les caractéristiques d'un vecteur non nul du plan.
+	\begin{itemize}
+		\item  Direction
+		\item  sens
+		\item Longueur ou norme
+	\end{itemize}
+	\item Donnons les caractéristiques du vecteur $\overrightarrow{AB}$ 
+	\begin{itemize}
+		\item  Direction: Celle de la droite $(AB)$
+		\item  sens: De A vers B
+		\item Longueur ou norme $AB$
+	\end{itemize}
+	
+	\item Identifions deux vecteurs ayant les mêmes caractéristiques. $\overrightarrow{AB}$ et $\overrightarrow{CD}$ . Ce sont des vecteurs égaux.
+	
+	
+	
+	\item Déterminons la résultante des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$. \\ La résultante des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ est le vecteur $\overrightarrow{AD}$
+	
+	\item La résultante des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ représente la somme de ces vecteurs. 
+	
+	\item Détermine $\overrightarrow{AB}+\overrightarrow{BD}$
+	$$\overrightarrow{AB}+\overrightarrow{BD}=\overrightarrow{AD}$$ 
+\end{enumerate}
+\begin{flushleft}
+	\underline{\textbf{Exploitation des résultats}}
+\end{flushleft}
+La résultante des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$ est le vecteur $\overrightarrow{AD}$. On dit que $\overrightarrow{AD}$ est la somme des vecteurs  $\overrightarrow{AB}$ et $\overrightarrow{AC}$ et on écrit $\overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{AD}$
+
+\begin{flushleft}
+	\underline{\textbf{Définition}}:
+\end{flushleft}
+Un vecteur est un  	objet mathématique caractérisé par une direction, un sens et une
+longueur
+\begin{flushleft}
+	\underline{\textbf{Retenons}}:
+\end{flushleft}
+\begin{enumerate}
+	\item  \textbf{. Caractéristiques d'un vecteur}\\
+	Un vecteur non nul $\overrightarrow{AB}$ est caractérisé par :
+	\begin{itemize}
+		\item Sa direction: celle de la droite $(AB)$
+		\item  Son sens: de A vers B sur la droite
+		\item sa norme ou longueur: la distance AB
+		
+	\end{itemize}
+	\item  \textbf{Vecteur égaux}\\
+	Deux vecteurs sont égaux lorsqu'ils ont:
+	\begin{itemize}
+		\item la même direction
+		\item  le même sens
+		\item la même longueur
+	\end{itemize}
+	\item  \textbf{Vecteurs opposés}\\
+	Deux vecteurs sont opposés lorsqu'ils ont:
+	\begin{itemize}
+		\item la même direction
+		\item la même longueur
+		\item  le sens contraire
+	\end{itemize}
+\underline{\textbf{Exemple}}:	$\overrightarrow{AB}$ est l'opposé de $\overrightarrow{BA}$. On note $\overrightarrow{AB}=-\overrightarrow{BA}$
+\end{enumerate}
+\underline{\textbf{Propriété}}:\\
+$A, B$ et $C$ sont des points du plan. On a :\\ $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$ (C'est la relation de Chasles)
+
+\begin{flushleft}
+	\underline{\textbf{Remarques}}
+	
+\end{flushleft}
+Pour construire la somme de deux vecteurs, on peut utiliser les méthodes suivantes: 
+\begin{enumerate}
+	\item  Quels que soient les points A, B et C, on a $\overrightarrow{AB}+\overrightarrow{BC}=\overrightarrow{AC}$.
+	C'est la relation de Chasles.\\
+	Pour appliquer cette relation, l'extrémité du premier vecteur
+	doit être égale à l'origine du deuxième.
+	\begin{minipage}{4.1cm}
+		\includegraphics[scale=0.40]{re1.png}
+	\end{minipage} \hspace*{0.4cm}
+	\item \textbf{Règle du parallélogramme}:
+	A, B et C sont trois points quelconques. $\overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{AD}$,
+	où le point $D$ est tel que $ABDC$ est un parallélogramme.
+	Pour appliquer cette relation, les deux vecteurs à ajouter
+	doivent avoir la même origine.
+	\begin{minipage}{4.1cm}
+		\includegraphics[scale=0.50]{re2.png}
+	\end{minipage} \hspace*{0.4cm}
+	\item $A$, $B$, $M$ et $N$ sont des points du plan tels que $\overrightarrow{AB}$ et $\overrightarrow{MN}$ sont deux vecteurs non nuls qui n'ont pas la même direction. Pour construire le vecteur $\overrightarrow{AB}+\overrightarrow{MN}$ , on procède comme suit:
+	\begin{itemize}
+		\item  Construire le représentant de $\overrightarrow{MN}$  d'origine A. (un vecteur d'origine $A$ égal à $\overrightarrow{MN}$ )
+	%	\item  Construire le représentant de $\vec{v}$ d?origine A. (un vecteur d'origine $A$ égaux à $\vec{v}$)
+		\item  Construire le point $D$ tel que $ABDC$ soit un
+		parallélogramme. Le vecteur $\overrightarrow{AD}$ représente la somme des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{MN}$.
+	\end{itemize}
+	\begin{minipage}{4.1cm}
+		\includegraphics[scale=0.50]{re3.png}
+	\end{minipage} \hspace*{0.4cm}
+	\item $A,B$ et $C$ étant des points non alignés, pour construire le vecteur $\overrightarrow{AD}$ tel que $\overrightarrow{AB}+\overrightarrow{AC}=\overrightarrow{AD}$, on pourrait construire à l'aide du compas le point $D$ tel que le vecteur $\overrightarrow{AD}$ soit la résultante des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{AC}$
+	\item \textbf{Somme de deux vecteurs colinéaires de même sens}\\
+	 Pour construire la somme de deux vecteurs non nuls colinéaires $\overrightarrow{AB}$ et $\overrightarrow{CD}$ on peut procéder comme suit:
+	\begin{itemize}
+	\item  tracer une droite parallèle à la droite $(CD)$ passant par $A$.
+	\item  construire sur la droite $(AB)$ un représentant du vecteur $\overrightarrow{CD}$ à partir du point d'arrivée du vecteur $\overrightarrow{AB}$ (l'origine du représentant de $\overrightarrow{CD}$ est $B$ dans ce cas). Soit $M$ le point d'arrivée de ce vecteur.
+	\item la somme des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ est ainsi obtenue en traçant sur la droite $(AB)$ un vecteur à partir du point de départ initial (le point $A$) jusqu'au point d'arrivée du deuxième vecteur (le point M). On a donc  $\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AM}$\\
+		\begin{minipage}{4.1cm}
+		\includegraphics[scale=0.50]{vec_col.png}
+	\end{minipage} \hspace*{0.4cm}
+	\end{itemize}
+	\item \textbf{Somme de deux vecteurs colinéaires de sens contraire}\\
+Pour construire la somme de deux vecteurs non nuls colinéaires  $\overrightarrow{AB}$ et $\overrightarrow{CD}$ de sens contraire, on peut procéder comme suit:(On suppose que la longueur de $\overrightarrow{AB}$ est supérieure à la longueur de $\overrightarrow{CD}$)
+\begin{itemize}
+%	\item  tracer une droite parallèle à la droite $(CD)$ passant par $A$.
+	\item  construire sur la droite $(AB)$ un représentant du vecteur $\overrightarrow{CD}$ à partir du point d'arrivée du vecteur $\overrightarrow{AB}$ (l'origine du représentant de $\overrightarrow{CD}$ est $B$ dans ce cas). Soit $M$ le point d'arrivée de ce vecteur.
+	\item la somme des vecteurs $\overrightarrow{AB}$ et $\overrightarrow{CD}$ est ainsi obtenue en traçant sur la droite $(AB)$ un vecteur à partir du point de départ initial (le point $A$) jusqu'au point d'arrivée du deuxième vecteur (le point M). On a donc: $\overrightarrow{AB}+\overrightarrow{CD}=\overrightarrow{AM}$\\
+	\begin{minipage}{4.1cm}
+		\includegraphics[scale=0.50]{vec_col2.png}
+	\end{minipage} \hspace*{0.4cm}
+\end{itemize}
+\end{enumerate}
+
+\begin{flushleft}
+	\underline{\textbf{Consigne2}}:
+\end{flushleft}
+\begin{enumerate}
+	\item  Reprends la figure de l'activité 1
+	\item Construis les points $M$ et $N$ tels que: 
+	\begin{enumerate}
+		\item  $\overrightarrow{AB}=\overrightarrow{IM}$
+		\item $\overrightarrow{IB}+\overrightarrow{IJ}=\overrightarrow{IN}$
+	\end{enumerate}
+\end{enumerate}
+\textbf{Stratégie }: TI=$\hspace{0.5cm}$   min TG= $\hspace{0.5cm}$ min  TC= $\hspace{0.5cm}$ min\\
+\begin{flushleft}
+	\underline{\textbf{Résultat attendu}}:
+\end{flushleft}
+\begin{enumerate}
+	\item  Reprenons la figure de l'activité 1
+	\item Construisons les points $M$ et $N$ tels que: 
+	\begin{enumerate}
+		\item  $\overrightarrow{AB}=\overrightarrow{IM}$
+		\item $\overrightarrow{IB}+\overrightarrow{IJ}=\overrightarrow{IN}$
+	\end{enumerate}
+	\includegraphics[width=0.5\linewidth]{im1.png}
+\end{enumerate}
+\begin{center}
+	\underline{\textbf{Evaluation Post-test}}
+\end{center}
+Le père de Sodji a un magasin de forme rectangulaire $ABCD$ de centre $O$. Il lui faut placer des lampes aux points $M$, $N$ et $P$ du plan tels que  $\overrightarrow{AB}=\overrightarrow{OM}$, $\overrightarrow{OB}+\overrightarrow{OC}=\overrightarrow{ON}$ et $-\overrightarrow{OB}+3\overrightarrow{OC}=\overrightarrow{OP}$ pour que le terrain soit mieux éclairé. Il sollicite alors l'aide de son fils Sodji pour l'accomplissement de cette tâche\\
+\textbf{Tâche}: Tu vas aider Sodji en répondant aux consignes suivantes
+\begin{flushleft}
+	\underline{\textbf{Consignes}}
+\end{flushleft}
+\begin{enumerate}
+	\item  
+	\begin{enumerate}
+		\item  Donne les caractéristiques du vecteur $\overrightarrow{AC}$
+		\item  Donne les caractéristiques de deux vecteurs égaux
+		\item  Donne les caractéristiques de deux vecteurs opposés
+	\end{enumerate}
+	\item 
+	\begin{enumerate}
+		\item  Donne sur la figure deux vecteurs égaux
+		\item Donne sur la figure deux vecteurs opposés
+	\end{enumerate}
+	\item  Construis les points $M,N$ et $P$ tels que:
+	\begin{enumerate}
+		\item  $\overrightarrow{AB}=\overrightarrow{OM}$
+		\item  $\overrightarrow{OB}+\overrightarrow{OC}=\overrightarrow{ON}$
+		\item  $-\overrightarrow{OB}+3\overrightarrow{OC}=\overrightarrow{OP}$
+	\end{enumerate}
+	\item Complète les pointillés
+	\begin{enumerate}
+		\item $\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CO}+\overrightarrow{OD}=\dots$
+		\item  $\overrightarrow{AC}=\overrightarrow{AD}+\dots$
+	\end{enumerate}
+\end{enumerate}
+
+
+		\section{Présentation et interprétation des résultats}
+	\subsection*{Analyse du résultat du pré-test}
+	Nous avons administré le pré-test le 15 Février 2024. Les résultats obtenus se résument dans le tableau suivant:\\
+	\vspace*{1cm}
+	
+	\begin{longtable}{|c|c|c|c|c|c|}
+		\caption{\label{}Résultat pré-test groupe G1}\\
+		\hline
+		Classes&[0;5[&[5;10[&[10;15[&[15;20]&Total\\
+		\hline
+		Effectifs&1&14&6&00&21\\
+		\hline
+		Pourcentage&4,76&66,67&28,57&00&100\\
+		\hline
+	\end{longtable}
+	
+	\vspace{0.5cm}
+	\begin{longtable}{|c|c|c|c|c|c|}
+		\caption{\label{}Résultat du pré-test groupe G2}\\
+		\hline
+		Classes&[0;5[&[5;10[&[10;15[&[15;20]&Total\\
+		\hline
+		Effectifs&1&16&4&01&22\\
+		\hline
+		Pourcentage&4,54&72,73&18,18&4,54&100\\
+		\hline
+	\end{longtable}
+	
+	\vspace{0.5cm}
+	
+	\begin{longtable}{|c|c|c|c|c|c|}
+		\caption{\label{}Résultat du pré-test groupe classe}\\
+		\hline
+		Classes&[0;5[&[5;10[&[10;15[&[15;20]&Total\\
+		\hline
+		Effectifs&2&30&10&01&43\\
+		\hline
+		Pourcentage&4,65&69,77&23,26&2,33&100\\
+		\hline
+	\end{longtable}
+	
+	Voici les copies de deux apprenants:\\
+	\includegraphics[width=0.27\linewidth]{E1.pdf}
+	\includegraphics[width=0.27\linewidth]{E12.pdf}
+	\includegraphics[width=0.27\linewidth]{E2.pdf}
+	\includegraphics[width=0.27\linewidth]{E22.pdf}\\
+	
+	En analysant les résultats du pré-test, nous remarquons aisément que les apprenants n'ont pas réussi la construction de la somme des vecteurs. Ils ne se sont pas intéressés aux caractéristiques des vecteurs, les propriétés qui interviennent dans la construction de la somme de deux vecteurs comme les caractéristiques des vecteurs égaux, les caractéristiques des vecteurs opposés, les propriétés caractéristiques d'un parallélogramme. Nous notons aussi les difficultés de certains apprenants à manipuler les instruments géométriques.\\
+	La moyenne des données est de $7,2$, ce qui est inférieure au seuil attendu. $(10/20)$. Une représentation graphique des données est la suivante:\\
+	\includegraphics[width=1\linewidth]{pot1.pdf}
+	\hspace*{6cm}		\textbf{Figure2} (Histogramme du pré-test)\\
+	
+	Nous avons procédé à la remédiation du problème observé le 22 Février 2024 avec le groupe expérimental ($G_2$) afin d'évaluer l'impact de la méthode utilisée.
+	
+	\subsection*{Analyse du résultat du post-test, groupe G1}
+	Après avoir administré l'évaluation à toute la classe, les notes obtenues pour le groupe $G_1$ se résument dans le tableau suivant.\\
+	\begin{longtable}{|c|c|c|c|c|c|}
+			\caption{\label{}Résultat du post-test groupe G1}\\
+		\hline
+		Notes&[0;5[&[5;10[&[10;15[&[15;20]&Total\\
+		\hline
+		Effectifs&3&12&5&1&22\\
+		\hline
+		Pourcentage&13,64&54,54&22,73&4,54&100\\
+		\hline
+	\end{longtable}
+	
+	La moyenne de ce groupe est: $7,76$. Une représentation graphique en histogramme est la suivante:\\
+\begin{center}
+		\includegraphics[width=0.7\linewidth]{plotpostG1.pdf}\\
+			\textbf{Figure3} (Histogramme du post-test (Groupe1)).
+\end{center}
+	
+	\subsection*{Analyse du résultat du post-test, groupe G2}
+	. Voici le tableau récapitulatif des résultats du groupe $G_2$ obtenus. \\
+	\begin{longtable}{|c|c|c|c|c|c|}
+			\caption{\label{}Résultat du post-test groupe G2}\\
+		\hline
+		Notes&[0;5[&[5;10[&[10;15[&[15;20]&Total\\
+		\hline
+		Effectifs&2&3&10&7&22\\
+		\hline
+		Pourcentage&9,09&13,64&45,45&31,82&100\\
+		\hline
+	\end{longtable}
+	\begin{center}
+		\textbf{Tableau10}\end{center}
+	Les résultats obtenus nous prouvent aisément que le traitement que nous avons fait du groupe expérimental a eu un impact positif sur les résultats. La moyenne de ce groupe est $12,45$. Cette moyenne est largement au dessus de celle du groupe $G_1$.   \\
+\begin{center}
+		\includegraphics[width=0.7\linewidth]{RplotG2.pdf}\\
+	\hspace*{4cm}		\textbf{Figure 4} (Histogramme du post-test (Groupe2))
+\end{center}
+		\subsection*{Comparaison des diagrammes }
+	\includegraphics[width=0.9\linewidth]{diaComp.png}\\
+	\hspace*{4cm}		\textbf{Figure 5} (Diagramme comparatif)\\
+	\begin{flushleft}
+		\textbf{Remarque1}
+	\end{flushleft}
+	En comparant les résultalts des deux groupes après le post-test, nous remarquons que:
+	\begin{itemize}
+		\item[$\bullet$] $02$ apprenants du groupe $G_2$ ont une note dans l'intervalle $[0;5[$ tandis-que $3$ apprenants du groupe $G_1$  ont une note dans l'intervalle $[0;5[$. Donc une légère  amélioration au niveau des apprenants ayant un niveau faible en mathématiques s'observe à ce niveau.
+		\item[$\bullet$] la même observation est faite pour les notes  de l'intervalle $[5;10[$. Dans ce cas, $3$ apprenants n'ont pas atteint le seuil de $10$. On conclut qu'au total, $05$ apprenants n'ont pas atteint le seuil de $10$, soit un pourcentage de $22,73\%$ pour le groupe $G_2$.
+		\item[$\bullet$]Le taux de réussite du groupe $G_2$ pour le post-test est de   $77,27\%$, un seuil qui nous prouve que notre remédiation a réussi.
+	\end{itemize}		
+	\begin{flushleft}
+	\textbf{Remarque2}
+\end{flushleft}	
+La différence observée entre la moyenne du groupe $G_1$ et le groupe $G_2$ est évidente via le diagramme  comparatif. La question que nous nous posons est de savoir si cet écart entre les moyennes est significatif ou si cela résulte simplement du hasard. A cet effet, nous allons effectuer un test statistique de comparaison de moyenne entre les deux groupes $G_1$ et $G_2$ en utilisant  le test de students (t.test) et les instructions du logiciel R. Ce test nécessite quelques étapes. Désignons par $\mu_1$ et $\mu_2$ les moyennes respectives des groupes $G_1$ et $G_2$. 
+\begin{itemize}
+\item [$\bullet$] \textbf{Etape 1}: Enoncer les hypothèses du test:\\
+$H_O$: $\mu_1=\mu_2$  (Hypothèse nulle ) et 	$H_1$: $\mu_1 \neq \mu_2$ (Hypothèse alternative)\\
+On acceptera l'hypothèse nulle $(H_0)$ lorsque la p-value est plus grande que $0.05$ et on rejettera $H_0$ lorsque la p-value est inférieure à $0.05$ avec un degré de confiance de $95\%$ \\
+
+\item [$\bullet$] \textbf{Etape 2}:
+Vérifier la normalité des données des groupes $G_1$ et $G_2$ en utilisant le test de normalité (Shapiro.test). On utilisera dans ce cas les hypothèses  suivantes:\\
+$H'_O$: les données des groupes $G_1$ et $G_2$ suivent une loi normale.\\
+$H'_1$: les données des groupes $G_1$ et $G_2$ ne suivent pas une loi normale.\\
+Voici ci-dessous les résultats obtenus:\\
+
+\includegraphics[width=0.5\linewidth]{shapiG1.png}\hspace*{0.5cm}
+\includegraphics[width=0.5\linewidth]{shapiG2.png}\\
+\item [$\bullet$] \textbf{Etape 3}:	Interprétation des résultats.\\
+Les résultats du test de Shapiro obtenus à l'étape 2 nous révèlent que la p-value est supérieure à $0,05$ pour les données des deux groupes $G_1$ et $G_2$. Ce qui permet d'accepter l'hypothèse $H'_0$ et de conclure que les données suivent une loi normale.\\
+L'instruction R pour le t.test donne le résultat suivant:
+
+\includegraphics[width=0.8\linewidth]{ttest.png}\\
+La p-value est $0,001073$. Elle est inférieure à $0,05$ ce qui nous permet de rejeter l'hypothèse nulle et de conclure avec un degré de confiance de $95\%$ qu'il y a une différence significative entre les moyennes des deux groupes $G_1$ et $G_2$.
+\end{itemize}
+	\section{Discussions, réflexions et recommandations}
+
+
+\section*{Discussion}
+La construction de la somme de vecteurs nécessite la maîtrise des définitions et propriétés liées aux vecteurs. L'analyse des résultats que nous avons effectuée a révélé la négligence que les apprenants manifestent par rapport aux définitions et propriétés sur les vecteurs. Il est donc nécessaire de faire maîtriser aux apprenants les définitions et les propriétés et leurs utilisations dans la notion de vecteurs. Aussi, on pourrait remarquer que d'autres apprenants connaissaient les démarches pour réussir la construction, mais manifeste la difficulté de manipuler les instruments géométriques. La nécessité de rappeler les pré-requis utiles à la construction des vecteurs s'impose. 
+
+Les méthodes que nous avons exposées pour construire la somme de deux vecteurs permettrons aux apprenants de maitriser au mieux la construction de deux vecteurs. Bien que nos conditions de travail diffèrent d'un environnement  à un autre, et les types d'apprenants que nous avons ne sont pas toujours les mêmes, ces méthodes peuvent toujours être améliorées et utilisés par tout autre enseignant. Ce qui importe, c'est l'atteinte des objectifs fixés.     
+\section*{Les limites de la recherche}
+Bien que nous ayons questionné les collègues afin de s'informer de la situation dans leurs classes respectives, nous pensons que la restriction de notre recherche uniquement à notre classe ne suffirait pas pour faire une large généralisation des solutions obtenues aux problèmes identifiés. Aussi, les lacunes accumulées par les apprenants impactent toujours leurs résultats bien que nous ayons trouvé des approches de solutions à certaines questions. 
+
+\section*{Recommandation}
+Les difficultés des apprenants en mathématiques sont d'ordre général. Nous suggérons, qu'en plus des différentes stratégies que nous utilisons dans nos pratiques d'enseignement, que nous fassions l'usage des méthodes que nous avons présentées dans ce document tout en tenant compte des types d'apprenants et de leurs niveaux. Nous recommandons aussi aux enseignants de rechercher les stratégies et les méthodes nécessaires pour réussir la notion à enseigner pour la réussite des apprenants.
+
+
+
+
+\section*{Conclusion}	
+La méthode recherche action quantitative nous a permis de répondre aux questions de recherche puis de vérifier les hypothèses émises. Les remédiations que nous avons proposées ont été un grand acquis pour les apprenants. 
+
+\chapter*{Conclusion générale}\addcontentsline{toc}{chapter}{Conclusion générale}
+%	\chapter*{Conclusion générale}
+Le stage pratique occupe une place importante dans le cursus de formation des enseignants dans le sens où il permet à l'enseignant une prise en main de la théorie acquise. Notre stage a été bénéfique pour nous, pour les apprenants, pour tous les membres du corps professorat du CEG Vakon  puis en général pour tout le système éduatif car il a participé à l'amélioration des résultats des apprenants, donc l'atteinte des objectifs fixés par l'Etat.\\
+Par ailleurs, il est important que l'Etat continue dans le même sens en envoyant en formation tous les enseignants n'ayant pas encore bénéficiés d'une formation professionnelle et un renvoie en formation pour ceux qui sont en attente d'une formation afin que les apprenants puissent bénéficier d'un enseignement de qualité et que le système éducatif  au  Bénin soit de mieux en mieux performant.
+\chapter*{Bibliographie}\addcontentsline{toc}{chapter}{Bibliographie}
+
+%\chapter*{Bibliographie}
+\begin{enumerate}
+	\item Guérick GNIMASSOU (2013), \textsf{"utilisation des définitions et propriétés du cours pour l'amélioration du raisonnement mathématiques des élèves de la classe de 4è du Lycée de jeunes filles de Natitingou sur la séquence: Notion de plan et droites de l'espace "}, ENS de Natitingou, Bénin, 2013.
+	\item  Ulrich AKPLOGAN  (2013) \textsf{"Apport de l'insertion dans les évaluations des questions de cours pour motiver les apprenants à apprendre le cours de Mathématique"},ENS de Natitingou, Bénin, 2013.
+	\item   Isaac ATEDE. (2022),\textsf{"Utilisation adéquate en mathématique des définitions et propriétés relatives à l'orthogonalité et à la colinéarité de deux vecteurs dans la résolution des problèmes au niveau des apprenants de la 3èM1 du CEG Goho/Abomey: Analyses et approches de solutions "},ENS de Natitingou, Bénin, 2022. 
+%	\item Inspection Générale Pédagogique du MESTFP du Bénin Guide du programme d'études réaménagé de Mathématiques de la classe de 4ème (Septembre 2020) ;
+	\item Inspection Générale Pédagogique du MESTFP du Bénin Guide du programme d'études réaménagé de Mathématiques de la classe de 3ème (Septembre 2020).
+	\item GADO I. (2016). Méthode de recherches quantitatives et qualitatives en sciences de l'éducation ; sciences
+	humaines et sociales, collection GADO, CNPMS Deuxième édition ;
+	\item GADO I. (2016). Statistiques inférentielles appliquées, collection GADO, CNPMS, 2è édition.
+%	\item Dictionnaire en ligne wikipédia, 
+\end{enumerate}
+\chapter*{Annexe}\addcontentsline{toc}{chapter}{Annexe}
+\begin{longtable}{|p{7cm}|p{2.8cm}|p{2.8cm}|p{2.8cm}|p{1.5cm}|}
+\caption{\label{}\textbf{Clé et grille de correction du pré-test}}\\
+\hline
+Eléments de réponses&CA&CM&CO&Total\\
+\hline
+&	L'apprenant&	L'apprenant&	L'apprenant&\\
+\hline
+1.(a) Construisons  $P$ 	\includegraphics[width=0.5\linewidth]{figp.png}
+
+
+&Identifie $P$ \hspace*{1cm} |& Construit la direction du vecteur $\overrightarrow{CP}$   \hspace*{2cm} |&Construis $P$ \hspace*{1cm} |&18pts\\
+\hline
+(b) Construisons $Q$
+\includegraphics[width=0.5\linewidth]{figQ.png}&Identifie Q \hspace*{1cm} |&Construis la direction du vecteur $\overrightarrow{AQ}$   \hspace*{2cm} |&Construis $Q$ \hspace*{1cm} |&18pts\\
+\hline
+(c) Construisons $R$
+\includegraphics[width=0.5\linewidth]{figR.png}&Identifie R \hspace*{1cm} |&Construis la direction du vecteur $\overrightarrow{AR}$   \hspace*{2cm} |&Construis $R$ \hspace*{1cm} |&18pts\\
+\hline
+(d) Construisons $S$
+\includegraphics[width=0.5\linewidth]{figS.png}&Identifie R \hspace*{1cm} |&Construis la direction du vecteur $\overrightarrow{BS}$   \hspace*{2cm} |&Construis $S$ \hspace*{1cm} |&18pts\\
+\hline
+(2) Construisons $\overrightarrow{BI}+\overrightarrow{AC}$
+\includegraphics[width=0.5\linewidth]{figu.png}&Identifie $\overrightarrow{BI}+\overrightarrow{AC}$ \hspace*{1cm} |&Construis   la direction du vecteur $\overrightarrow{BI}+\overrightarrow{AC}$ \hspace*{1cm} |&Construis $\overrightarrow{BI}+\overrightarrow{AC}$\hspace*{0.5cm} |&18pts\\
+\hline1CA=4pts,1CM=6pts, 1CO=8pts
+&Total CA=20pts&Total CM=30pts&Total CO=40pts&Total 90pts\\
+\hline	
+\end{longtable}
+
+\begin{longtable}{|p{7cm}|p{2.8cm}|p{3cm}|p{2.7cm}|p{1.5cm}|}
+	\caption{\label{}\textbf{Clé et grille de correction du post-test}}\\
+	\hline
+	Eléments de réponses&CA&CM&CO&Total\\
+	\hline
+	&	L'apprenant&	L'apprenant&	L'apprenant&\\
+	\hline
+	1.(a)Donnons les caractéristiques du vecteur $\overrightarrow{AC}$
+	\begin{itemize}
+		\item [$\bullet$] Direction: Celle de la droite $(AC)$
+		\item [$\bullet$] Sens : De $A$ vers $C$
+		\item  [$\bullet$] Norme ou longueur: distance AC 
+	\end{itemize}
+	
+	&Identifie $\overrightarrow{AC}$ \hspace*{1.5cm} |& Donne les caractéristiques d'un vecteur   \hspace*{1cm} |||&Trouve les caractéristiques de $\overrightarrow{AC}$ \hspace*{1.5cm} |&13pts\\
+	\hline
+	(b)Donnons les caractéristiques de deux vecteurs égaux:
+	\begin{itemize}
+		\item [$\bullet$] même Direction: 
+		\item [$\bullet$] même Sens : 
+		\item  [$\bullet$] même Norme ou longueur: 
+	\end{itemize}
+	&Identifie  le sens des vecteurs  \hspace*{1.5cm} |& Donne les caractéristiques d'un vecteur   \hspace*{1cm} |||&Trouve le résultat \hspace*{1cm} |&13pts\\
+	\hline
+	(c)Donnons les caractéristiques de deux vecteurs opposés:
+	\begin{itemize}
+		\item [$\bullet$] même Direction: 
+		\item [$\bullet$] Sens contraire : 
+		\item  [$\bullet$] même Norme ou longueur: 
+	\end{itemize}
+	&Identifie le sens des vecteurs \hspace*{1cm} |& Donne les caractéristiques d'un vecteur   \hspace*{1cm} |||&Trouve le résultat \hspace*{1cm} |&13pts\\
+	\hline
+	2(a): Donnons deux vecteurs égaux: $\overrightarrow{AB}$ et $\overrightarrow{DC}$& Identifie le parallélogramme  \hspace*{1cm} | &&Trouve deux vecteurs égaux  \hspace*{1cm} ||&6pts\\
+	\hline
+	
+	2(b): Donnons deux vecteurs opposés: $\overrightarrow{AB}$ et $\overrightarrow{DC}$& Identifie le parallélogramme  \hspace*{1cm} | &&Trouve deux vecteurs opposés  \hspace*{2cm} ||&6pts\\
+	\hline
+	3-a)-b)-c) Construisons $M, N$ et $P$
+	\includegraphics[width=1\linewidth]{fig2P.png}&Identifie M,N et P \hspace*{1cm}|| |&Construis le parallélogramme $ABCD$   \hspace*{1cm} |&Construis $M,N$ et $P$ \hspace*{0.2cm} |||||||||&27pts\\
+	\hline
+	4-a) Complétons les pointillés 
+	$\overrightarrow{AB}+\overrightarrow{BC}+\overrightarrow{CO}+\overrightarrow{OD}=\overrightarrow{AD}$&Identifie l'égalité \hspace*{1cm} |&&Trouve le résultat \hspace*{1cm} ||&6pts\\
+	\hline
+	4-b) Complétons les pointillés 
+	$\overrightarrow{AC}=\overrightarrow{AD}+\overrightarrow{DC}$&Identifie l'égalité \hspace*{1cm} |&&Trouve le résultat \hspace*{1cm} ||&6pts\\
+	
+	\hline1CA=2pts,1CM=3pts, 1CO=2pts
+	
+	&Total CA=20pts&Total CM=30pts&Total CO=40pts&Total 90pts\\
+	\hline
+	
+\end{longtable}
+
+\end{document}
